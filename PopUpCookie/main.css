@@ -92,3 +92,14 @@ section {
         text-align: left;
     }
 }
+
+@media (min-width: 1000px) {
+
+    .container-leftpanel {
+        flex: 0 0 15%;
+    }
+
+    .container {
+        flex: 0 0 40%;
+    }
+}

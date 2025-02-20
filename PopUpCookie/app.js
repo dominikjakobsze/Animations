@@ -4,7 +4,7 @@ tl.fromTo('.container', {scale: 0, opacity: 0}, {scale: 1, opacity: 1, ease: "el
         x: "0%", opacity: 1, rotate: "0deg"
     }, "<45%")
     .fromTo('.container-rightpanel', {x: "70%", opacity: 0}, {x: "0%", opacity: 1}, "<")
-    .fromTo('.container-image', {y: "25%", rotate: "0deg"}, {y: "-50%", rotate: "-15deg", yoyo: true, repeat: -1});
+    .fromTo('.container-image', {y: "25%", rotate: "0deg"}, {y: "-35%", rotate: "-15deg", yoyo: true, repeat: -1});
 
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
