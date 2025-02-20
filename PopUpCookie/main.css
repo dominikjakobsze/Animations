@@ -47,7 +47,6 @@ section {
 .container-leftpanel {
     flex: 0 0 25%;
     height: 100%;
-    overflow: hidden;
 }
 
 .container-rightpanel {
@@ -81,7 +80,7 @@ section {
 
 @media (min-width: 800px) {
     .container {
-        flex: 0 0 40%;
+        flex: 0 0 45%;
     }
 
     .container-leftpanel {
@@ -89,7 +88,7 @@ section {
     }
 
     .container-rightpanel {
-        flex: 0 0 60%;
+        flex: 0 0 70%;
         text-align: left;
     }
 }
