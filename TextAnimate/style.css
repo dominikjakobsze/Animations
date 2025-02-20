@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Małe ekrany (smartfony) */
+@media (min-width: 576px) {
+    /* Styl dla ekranów ≥576px */
+}
+
+/* Średnie ekrany (tablety) */
+@media (min-width: 768px) {
+    /* Styl dla ekranów ≥768px */
+}
+
+/* Duże ekrany (laptopy) */
+@media (min-width: 992px) {
+    /* Styl dla ekranów ≥992px */
+}
+
+/* Bardzo duże ekrany (monitory) */
+@media (min-width: 1200px) {
+    /* Styl dla ekranów ≥1200px */
+}
