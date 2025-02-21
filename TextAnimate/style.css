@@ -29,13 +29,13 @@
         align-items: center;
         align-content: center;
         overflow: hidden;
-        padding: 1rem 1rem;
+        padding: 0.3rem 0.3rem;
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.3rem;
             font-weight: 500;
             flex: 0 0 auto;
-            color: #181818;
+            color: #212121;
         }
     }
 }
@@ -58,18 +58,21 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 90%;
+        width: 95%;
         height: 95%;
+        max-height: 95%;
         object-fit: cover;
         object-position: center;
         z-index: 20;
+        border-radius: 3rem;
     }
 
     .hero-cta {
         position: relative;
         z-index: 30;
-        flex: 0 0 90%;
+        flex: 0 0 95%;
         height: 95%;
+        max-height: 95%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -77,18 +80,19 @@
         align-items: center;
         align-content: center;
         gap: 0.3rem;
+        overflow: hidden;
 
         .hero-cta--up, .hero-cta--down {
             flex: 0 0 100%;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
             align-content: center;
             color: white;
             gap: 0.5rem;
-            font-size: 3rem;
+            font-size: 2rem;
             text-shadow: rgba(0, 0, 0, 0.4) 0 0 20px;
 
             h4 {
@@ -103,8 +107,30 @@
             }
         }
 
+        .hero-cta-button-container {
+            flex: 0 0 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 2rem 1rem;
+
+            .cta-button {
+                background-color: white;
+                border: 0;
+                padding: 0.5rem 2rem;
+                font-family: "Poppins", serif;
+                border-radius: 0.4rem;
+                color: #212121;
+                font-size: 0.85rem;
+                box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+            }
+        }
     }
 }
+
 
 /* Małe ekrany (smartfony) */
 @media (min-width: 576px) {
@@ -113,7 +139,29 @@
 
 /* Średnie ekrany (tablety) */
 @media (min-width: 768px) {
-    /* Styl dla ekranów ≥768px */
+    .nav-container {
+        .nav {
+            padding: 1rem 1rem;
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .hero {
+        .hero-img {
+            width: 90%;
+        }
+
+        .hero-cta {
+            flex: 0 0 90%;
+
+            .hero-cta--up, .hero-cta--down {
+                font-size: 3rem;
+            }
+        }
+    }
 }
 
 /* Duże ekrany (laptopy) */
